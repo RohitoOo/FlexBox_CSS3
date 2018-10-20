@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="flex.png">
+    <title>Flex Box</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"> <h2>Box 1</h2> <p>Box Contents 1 Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Quam, nesciunt. 
+            Labore dolor nulla, ab nostrum sit, ipsa distinctio 
+            voluptates aliquam debitis fugit facere velit saepe reiciendis 
+            voluptatibus nesciunt inventore nemo.</p></div>
+        <div class="box2"> <h2>Box 2</h2> <p>Box Contents 2</p></div>
+        <div class="box3"> <h2>Box 3</h2> <p>Box Contents 3</p></div>
+        <div class="box4"> <h2>Box 4</h2> <p>Box Contents 4</p></div>
+    </div>
+</body>
+<style>
+     .container {
+     display: flex;
+     /* align-items: flex-start; */
+     /* align-items: flex-end; */
+        /* flex-direction: column; */
+        flex-direction: row;
+        background-color: aquamarine
+    }
+    .container div{
+        border: 1px solid #5c0b0b;
+        padding: 10px
+    }
+    .box1{
+        flex: 1;
+        order: 4;
+    }
+    .box2{
+        flex: 1;
+        order: 2;
+    }
+    .box3{
+        flex: 1;
+        order: 3;
+    }
+    .box4{
+        flex: 1;
+        order: 1;
+
+    }
+</style>
+</html>
